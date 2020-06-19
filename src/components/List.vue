@@ -22,8 +22,9 @@ export default {
     },
     methods: {
         findAll: function(){
-            console.log("Hola Mundo")
-            this.msj = "Click :)"
+            fetch('http://127.0.0.1:8000/api/element/?format=json') 
+                .then(res => res.json())
+                .then(res => console.log(res))
         }
     },
 }
