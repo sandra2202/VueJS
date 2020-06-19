@@ -5,6 +5,10 @@
             {{ e }}            
         </div>
 
+        <button v-on:click="findAll">Click</button>
+
+        {{ msj }}
+
     </div>
 </template>
 
@@ -12,9 +16,16 @@
 export default {
     data(){
         return{
+            msj: "... :(",
             elements: ["Uno", "Dos", "Tres"]
         };
-    }
+    },
+    methods: {
+        findAll: function(){
+            console.log("Hola Mundo")
+            this.msj = "Click :)"
+        }
+    },
 }
 </script>
 
