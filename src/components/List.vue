@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
 
         <div v-for="e in elements" v-bind:key="e.id">
             <b-card
