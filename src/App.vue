@@ -1,17 +1,19 @@
 <template>
   <div id="app">    
-    <List></List>
+    <List/>
   </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
-import List from './components/Table'
+import List from './components/List'
+//import Detail from './components/Detail'
 
 export default {
   name: 'App',
   components: {
-    List
+    List,
+    //Detail
   }
 }
 </script>
