@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HolaMundo></HolaMundo>
+    <List></List>
   </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
-import HolaMundo from './components/HolaMundo'
+import List from './components/List'
 
 export default {
   name: 'App',
   components: {
-    HolaMundo
+    List
   }
 }
 </script>
