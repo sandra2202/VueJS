@@ -5,11 +5,9 @@
 </template>
 
 <script>
-
 import ListDefault from '../partials/_ListDefault'
 
 export default {
-
     components: {
         ListDefault
     },
@@ -23,9 +21,9 @@ export default {
     },
     methods: {
         findAll: function(){
-            fetch('http://localhost:8000/api/category/'+this.$route.params.id+'/elemets/?format=json') 
+            fetch("http://localhost:8000/api/type/"+this.$route.params.id+"/elemets/?format=json") 
                 .then(res => res.json())
-                .then(res => this.elements = res)                
+                .then(res => (this.elements = res))                
         }
     },
 }
