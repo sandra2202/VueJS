@@ -25,10 +25,16 @@ export default {
         findAll: function(){
             fetch('http://localhost:8000/api/category/'+this.$route.params.id+'/elemets/?format=json') 
                 .then(res => res.json())
-                .then(res => this.elements = res)                
+                .then(res => (this.elements = res))                
         }
     },
-}
+    watch:{
+        "$route.params.id" : function() {
+            console.log("Listado de categorias");
+            this.findAll();
+        }
+    }
+};
 </script>
 
 <style>
