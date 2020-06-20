@@ -18,7 +18,7 @@ export default {
     },
     methods: {
         find: function(){
-            fetch('http://127.0.0.1:8000/api/element/1/?format=json') 
+            fetch("http://127.0.0.1:8000/api/element/"+this.$route.params.id+"/?format=json") 
                 .then(res => res.json())
                 .then(res => this.element = res)                
         }
