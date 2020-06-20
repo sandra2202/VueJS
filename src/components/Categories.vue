@@ -1,13 +1,12 @@
 <template>
-    <div>        
+    <div>      
+        <h5>Categorías</h5>    
         <b-list-group>
-            <div v-for="c in categories" v-bind:key="c.id">
-                <b-list-group-item button>
+                <b-list-group-item button v-for="c in categories" v-bind:key="c.id">
                     <router-link :to=" '/category/' + c.id +'/elemets'">
                        {{ c.title }}     
                     </router-link>
                 </b-list-group-item>
-            </div>
         </b-list-group>
     </div>
 </template>
