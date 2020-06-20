@@ -14,7 +14,7 @@
 
 
 import Header from './components/Header'
-import Categories from './components/Categories'
+import Categories from './components/Types'
 export default {
   name: 'App',
   components: {
