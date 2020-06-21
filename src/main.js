@@ -19,10 +19,10 @@ Vue.use(IconsPlugin)
 Vue.config.productionTip = false
 
 const routes =[ 
-  {path:'/', component:List},
-  {path:'/detail/:id', component:Detail},
-  {path:'/category/:id/elemets', component: ListCategory},
-  {path:'/type/:id/elemets', component: ListType}
+  {path:'/', component:List, name: 'list'},
+  {path:'/detail/:id', component:Detail, name: 'detail'},
+  {path:'/category/:id/elemets', component: ListCategory, name: 'list-category'},
+  {path:'/type/:id/elemets', component: ListType, name: 'list-type'}
 ]
 
 const router = new VueRouter({

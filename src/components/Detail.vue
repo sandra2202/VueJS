@@ -3,6 +3,8 @@
         <b-card>
             <h1>{{ element.title }}</h1>
             <div class="p-3">
+                <router-link class="btn btn-danger btn-sm" :to="{ name:'list-category',params:{id: element.category} }">Categoría</router-link>
+                <router-link class="ml-2 btn btn-danger btn-sm" :to="{ name:'list-type',params:{id: element.type} }">Type</router-link>
                 <b-card-text>{{ element.description }}</b-card-text>
             </div>             
         </b-card>      
