@@ -1,7 +1,10 @@
 <template>
     <div>        
-        <b-card :title="element.title">
-            <b-card-text>{{ element.description }}</b-card-text> 
+        <b-card>
+            <h1>{{ element.title }}</h1>
+            <div class="p-3">
+                <b-card-text>{{ element.description }}</b-card-text>
+            </div>             
         </b-card>      
     </div>
 </template>
